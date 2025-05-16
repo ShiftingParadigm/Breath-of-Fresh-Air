@@ -59,6 +59,6 @@ Start developing
 
 Gulp will watch .scss files, compile them, and reload your browser with Browsersync.
 
-![Dashboard Preview](images/screenshot.png)
+![Dashboard Preview](images/dashbord.png)
 
 Created with ❤️ by Sushant Rathore
