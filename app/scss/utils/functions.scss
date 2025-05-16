@@ -1,0 +1,18 @@
+@use "sass:math";
+@use "sass:meta";
+
+// 🔄 Updated strip-unit()
+@function strip-unit($number) {
+  @if meta.type-of($number) == "number" and not math.is-unitless($number) {
+    // Proper division that removes the unit
+    @return math.div($number, $number * 0 + 1);
+  }
+  @return $number;
+}
+
+// 📏 rem converter with default context
+@function rem($pixels, $context: 16) {
+  $pixels: strip-unit($pixels);
+  $context: strip-unit($context);
+  @return math.div($pixels, $context) * 1rem;
+}
