@@ -59,20 +59,4 @@ Start developing
 
 Gulp will watch .scss files, compile them, and reload your browser with Browsersync.
 
-🎨 Customization
-Edit variables in app/scss/utils/_variables.scss to change colors, font sizes, etc.
-
-Adjust breakpoints in app/scss/utils/_breakpoints.scss for responsiveness.
-
-Theme toggle logic is handled using radio inputs + CSS — no JS required!
-
-🧪 To Do / Improvements
-Add localStorage to remember selected theme
-
-Add animations to toggle switch
-
-Optimize for accessibility (ARIA attributes, focus states)
-
-Add mobile drawer menu (optional)
-
 Created with ❤️ by Sushant Rathore
